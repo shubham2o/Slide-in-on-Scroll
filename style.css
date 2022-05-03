@@ -61,5 +61,5 @@ h1 {
 
 .slide-in.active {
     opacity : 1;
-    transition : translateX(0%) scale(1);
+    transform : translateX(0%) scale(1);
 }
