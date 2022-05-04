@@ -21,18 +21,79 @@
         <p>• <strong>EXAMPLE 1 ||</strong>
             Scroll the document to the horizontal position 200 :</p>
         <p>Click to scroll the document.</p>
-        <button onclick="scrollHor()">Scroll to 200 Horizontally</button>
+        <button onclick="scrollHor()" type="button">Scroll to 200 Horizontally</button>
     </div>
-    <br><br>
+    <br>
 
     <!-- EXAMPLE 2 || -->
     <div class="scrollTo2">
         <p>• <strong>EXAMPLE 2 ||</strong>
             Scroll the document to the vertical position 500 :</p>
         <p>Click to scroll the document.</p>
-        <button onclick="scrollVer()">Scroll to 500 Vertically</button>
+        <button onclick="scrollVer()" type="button">Scroll to 500 Vertically</button>
     </div>
-    <br><br>
+    <br>
+    <hr size="5" noshade>
+
+
+    <!-- onscroll Event -->
+    <h1>onscroll Event</h1>
+    <p>• The onscroll event occurs when an element's scrollbar is being scrolled.</p>
+    <p>• Use the CSS overflow style property to create a scrollbar for an element.</p>
+
+    <!-- EXAMPLE 1 || -->
+    <p>• <strong>EXAMPLE 1 ||</strong>
+        Execute a JavaScript when a div element is being scrolled :</p>
+    <div onscroll="onScroll()" class="onscroll">
+        In my younger and more vulnerable years my father gave me some advice that I've been
+        turning over in my mind ever since.
+        <br><br>
+        'Whenever you feel like criticizing anyone,' he told me, just remember that all the people in this world haven't
+        had the advantages that you've had.
+    </div>
+    <p>Scrolled <span id="demo">0</span> times.</p>
+    <br>
+
+    <!-- EXAMPLE 2 || -->
+    <p>• <strong>EXAMPLE 2 ||</strong>
+        In HTML : </p>
+    <div onscroll="onScroll2()" class="onscroll">
+        In my younger and more vulnerable years my father gave me some advice that I've been
+        turning over in my mind ever since.
+        <br><br>
+        'Whenever you feel like criticizing anyone,' he told me, just remember that all the people in this world haven't
+        had the advantages that you've had.
+    </div>
+    <p id="demo2"></p>
+    <br>
+
+    <!-- EXAMPLE 3 || -->
+    <p>• <strong>EXAMPLE 3 ||</strong>
+        In JavaScript : </p>
+    <p>This example uses the HTML DOM to assign an "onscroll" event to a div element.</p>
+    <div class="onscroll" id="onscroll3">
+        In my younger and more vulnerable years my father gave me some advice that I've been
+        turning over in my mind ever since.
+        <br><br>
+        'Whenever you feel like criticizing anyone,' he told me, just remember that all the people in this world haven't
+        had the advantages that you've had.
+    </div>
+    <p id="demo3"></p>
+    <br>
+
+    <!-- EXAMPLE 4 || -->
+    <p>• <strong>EXAMPLE 4 ||</strong>
+        In JavaScript, using the addEventListener() Method : </p>
+    <p>This example uses the addEventListener() method to attach a "scroll" event to a div element.</p>
+    <div class="onscroll" id="onscroll4">
+        In my younger and more vulnerable years my father gave me some advice that I've been
+        turning over in my mind ever since.
+        <br><br>
+        'Whenever you feel like criticizing anyone,' he told me, just remember that all the people in this world haven't
+        had the advantages that you've had.
+    </div>
+    <p id="demo4"></p>
+    <br>
     <hr size="5" noshade>
 
     <script src="doubts.js"></script>

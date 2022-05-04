@@ -1,8 +1,8 @@
 .scrollTo {
-    width : 5000px; 
+    /* width : 5000px;  */
 }
 .scrollTo > button {
-    position : fixed;
+    /* position : fixed; */
 }
 
 
@@ -10,5 +10,13 @@
     /* height : 5000px;  */
 }
 .scrollTo2 > button {
-    position : fixed;
+    /* position : fixed; */
+}
+
+
+.onscroll {
+    border : 1px solid black;
+    width : 200px;
+    height : 100px;
+    overflow : scroll;
 }
