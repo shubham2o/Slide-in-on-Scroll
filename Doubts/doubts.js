@@ -35,3 +35,34 @@ document.getElementById("onscroll4").addEventListener("scroll", onScroll4);
 function onScroll4() {
     document.getElementById("demo4").innerHTML = "You have scrolled in div.";
 }
+
+
+// HTML DOM Element offsetTop
+function myExample1() {
+    var testDiv = document.getElementById("test");
+    document.getElementById("ex1").innerHTML = testDiv.offsetTop;
+}
+
+function myExample2() {
+    var testDiv2 = document.getElementById("test2");
+    var demoDiv = document.getElementById("ex2");
+    demoDiv.innerHTML =
+        "offsetLeft : " + testDiv2.offsetLeft + "<br>offsetTop : " + testDiv2.offsetTop;
+}
+
+const navbar = document.getElementById("navbar");
+const sticky = navbar.offsetTop;
+
+function myExample3() {
+    if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky");
+    } else {
+        navbar.classList.remove("sticky");
+    }
+}
+
+
+function pageXOff() {
+    window.scrollBy(100, 100);
+    alert("pageXOffset : " + window.pageXOffset + " , pageYOffset : " + window.pageYOffset);
+}

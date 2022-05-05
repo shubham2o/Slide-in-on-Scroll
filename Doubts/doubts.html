@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="doubts.css">
 </head>
 
-<body>
+<body onscroll="myExample3()">
     <!-- scrollTo() -->
     <h1>scrollTo()</h1>
     <p>• The scrollTo() method scrolls the document to specified coordinates.</p>
@@ -95,6 +95,87 @@
     <p id="demo4"></p>
     <br>
     <hr size="5" noshade>
+
+    <!-- HTML DOM Element offsetTop -->
+    <h1>HTML DOM Element offsetTop</h1>
+    <p>• The offsetTop property returns the top position (in pixels) relative to the parent.</p>
+    <p>• The returned value includes :
+        <br>-- the top position, and margin of the element.
+        <br>-- the top padding, scrollbar and border of the parent.
+    </p>
+    <p>• The offset property is read-only.</p>
+
+    <!-- EXAMPLE 1 || -->
+    <p>• <strong>EXAMPLE 1 ||</strong>
+        Get the offsetTop position of "myDiv" :
+    </p>
+    <div id="test">
+        <p>Click the button to get offsetTop for the test div.</p>
+        <p><button onclick="myExample1()">Try it</button></p>
+        <p>offsetTop is : <span id="ex1"></span></p>
+    </div>
+    <br>
+
+    <!-- EXAMPLE 2 || -->
+    <p>• <strong>EXAMPLE 2 ||</strong>
+        Get the positions of "myDiv" :
+    </p>
+    <div id="test2">
+        <p>Click the button to get the left and top offsets for the test div.</p>
+        <p><button onclick="myExample2()">Try it</button></p>
+        <p id="ex2">offsetLeft : <br>offsetTop : </p>
+    </div>
+    <br>
+
+    <!-- EXAMPLE 3 || -->
+    <p>• <strong>EXAMPLE 3 ||</strong>
+        Create a sticky navigation bar :
+    </p>
+    <div class="header">
+        <h2>Scroll Down</h2>
+        <p>Scroll down to see the sticky effect.</p>
+    </div>
+    <div id="navbar">
+        <a href="javascript:void(0)" class="active">Home</a>
+        <a href="javascript:void(0)">News</a>
+        <a href="javascript:void(0)">Contact</a>
+    </div>
+    <div class="content">
+        <h3>Sticky Navigation Example</h3>
+        <p>The navbar will stick to the top when you reach its scroll position.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
+            concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
+            Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
+            concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
+            Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
+            concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
+            Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
+            concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
+            Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
+            concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
+            Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    </div>
+    <hr size="5" noshade>
+
+    <!-- Window pageXOffset -->
+    <h1>Window pageXOffset</h1>
+    <p>• The pageXOffset property returns the pixels a document has scrolled from the upper left corner of the window.
+    </p>
+    <p>• The pageXoffset property is equal to the scrollX property.</p>
+    <p>• The pageXOffset property is read-only.</p>
+
+    <!-- EXAMPLE 1 || -->
+    <p>• <strong>EXAMPLE 1 ||</strong>
+        Scroll the content by 100 pixels, and alert the pageXOffset and pageYOffset :</p>
+    <button onclick="pageXOff()">Click me to scroll</button>
+    <br><br>
+    <div style=" background-color :lightblue; height : 2000px; width : 2000px; "></div>
+    <br><br>
+    <hr size=" 5" noshade>
 
     <script src="doubts.js"></script>
 </body>
